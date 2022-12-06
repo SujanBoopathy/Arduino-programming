@@ -1,0 +1,17 @@
+int i = 0;
+const int LED = 11; //define the pin we use for LED
+
+void setup() {
+  pinMode(LED, OUTPUT); //set pin 11 as OUTPUT
+}
+
+void loop() {
+    for (int i = 0; i < 255; i++){ //if i is less than 255 then increase i with 1
+    analogWrite(LED, i); //write the i value to pin 11
+    delay(5); //wait 5 ms then do the for loop again
+  }
+  for (int i = 255; i > 0; i--){ //descrease i with 1
+    analogWrite(LED, i);
+    delay(5);
+  }
+}

@@ -1,0 +1,16 @@
+void setup() {
+  Serial.begin(9600); // Start Serial.
+  pinMode(13, OUTPUT);
+}
+
+void loop() {
+  int A = analogRead(A0);
+  if(A>=400){
+	Serial.print("detected");
+  }
+  else{
+	Serial.print("not detected");
+  }
+
+
+}
