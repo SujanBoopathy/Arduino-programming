@@ -1,7 +1,7 @@
 
 
-const int TOUCH_SENSOR_PIN = 7; // Arduino pin connected to touch sensor's pin
-const int BUZZER_PIN       = 3; // Arduino pin connected to Buzzer's pin
+const int TOUCH_SENSOR_PIN = 8; // Arduino pin connected to touch sensor's pin
+const int BUZZER_PIN       = 2; // Arduino pin connected to Buzzer's pin
 
 void setup() {
   Serial.begin(9600);               // initialize serial
