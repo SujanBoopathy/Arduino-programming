@@ -9,7 +9,7 @@
 #define s3 11
 #define out 12
 
-int data=0;        //This is where we're going to stock our values
+int value=0;        //This is where we're going to stock our values
 
 void setup() 
 {
@@ -50,8 +50,8 @@ void loop()                  //Every 2s we select a photodiodes set and read its
 }
 
 void GetData(){
-   data=pulseIn(out,LOW);       //here we wait until "out" go LOW, we start measuring the duration and stops when "out" is HIGH again
-   Serial.print(data);          //it's a time duration measured, which is related to frequency as the sensor gives a frequency depending on the color
+   value=pulseIn(out,LOW);       //here we wait until "out" go LOW, we start measuring the duration and stops when "out" is HIGH again
+   Serial.print(value);          //it's a time duration measured, which is related to frequency as the sensor gives a frequency depending on the color
    Serial.print("\t");          //The higher the frequency the lower the duration
    delay(20);
 }
